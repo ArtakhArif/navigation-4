@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore Ccommcrce Website design </title>
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+
+
+</head>
+
+<body>
+
+
+ 
+
+
+
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+               
+                <div class="logo ">
+                     <img src="images/logo.png" >
+               </div>
+                
+                <nav>
+                   
+                    <ul id="MenuItems">
+                        <li> <a href="./nagivation.html">Home</a> </li>
+                        <li> <a href="./About.Html">About </a> </li>
+                        <li> <a href="./simpleform.html"> Contact</a> </li>
+                        <li> <a href="./login3.html"> login & signup</a> </li>
+                    </ul>
+                </nav>
+                <img src="images/hamburger_button_menu_icon_155296.webp" class="menu-icon" onclick="menutoggle()">
+
+            
+                </div>
+                <div class="col-2">
+                    <!-- <img src="./images/image_2696396.jpg"> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<style>
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .navbar {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+
+
+
+
+ }
+nav .logo{
+    font-size: 33px;
+   font-weight: 600px;
+   justify-content: space-between;
+   text-align: left;
+}
+
+ nav {
+     flex: 1;
+     text-align: right;
+
+ }
+
+ nav ul {
+     display: inline-block;
+     list-style-type: none;
+
+
+ }
+
+ nav ul li {
+     display: inline-block;
+     margin-right: 20px;
+     justify-content: space-between;
+ }
+
+ a {
+     text-decoration: none;
+     color: #555;
+ }
+
+ p {
+     color: #555;
+ }
+
+ .container {
+     max-width: 1300px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+ }
+
+ .row {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+
+ }
+
+ .col-2 {
+     flex-basis: 50%;
+     min-width: 300px;
+ }
+
+ .col-2 img {
+     max-width: 100%;
+     padding: 50px 0;
+ }
+
+ .col-2 h1 {
+     font-size: 50px;
+     line-height: 60px;
+     margin: 25px 0;
+ }
+
+ .btn {
+     display: inline-block;
+     background: #ff523b;
+     color: white;
+     padding: 8px 30px;
+     margin: 30px 0;
+     border-radius: 30px;
+     transition: background 0.5s;
+ }
+
+ .btn:hover {
+     background: #563434;
+ }
+
+
+ .header {
+     background: radial-gradient(#fff, #ffd6d6);
+ }
+
+ .header .row {
+     margin-top: 70px;
+ }
+
+ .categories {
+     margin: 70px 0;
+ }
+
+ .col-3 {
+     flex-basis: 30%;
+     min-width: 250px;
+     margin-bottom: 30px;
+ }
+
+ .col-3 img {
+     width: 80%;
+ }
+
+ .small-container {
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+
+ }
+
+ .col-4 {
+     flex-basis: 25%;
+     padding: 10px;
+     min-width: 200px;
+     margin-bottom: 50px;
+     transition: transform 0.5s;
+ }
+
+ .col-4 img {
+     width: 200px;
+ }
+
+ .title {
+     text-align: center;
+     margin: 0 auto 80px;
+     position: relative;
+     line-height: 60px;
+     color: #555;
+ }
+
+ .title::after {
+     content: '';
+     background: #ff523b;
+     width: 80px;
+     height: 5px;
+     border-radius: 5px;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ h4 {
+     color: #555;
+     font-weight: normal;
+ }
+
+ .col-4 p {
+     font-size: 14px;
+ }
+
+ .rating .fa {
+     color: #ff523b;
+ }
+
+ .col-4 :hover {
+     transform: translateY(-5px);
+ }
+
+ /* ------------ offer ------------- */
+ .offer {
+     background: radial-gradient(#fff, #ffd6d6);
+     margin-top: 80px;
+     padding: 30px 0;
+
+ }
+
+ .col-2 .offer-img {
+     padding: 50px;
+ }
+
+ small {
+     color: #555;
+ }
+
+ /* ----------Testimonial ----------  */
+ .Testimonial {
+     padding-top: 100px;
+ }
+
+ .Testimonial .col-3 {
+     text-align: center;
+     padding: 40px 20px;
+     box-shadow: 0 0 20px 0px 0px rgba(0, 0, 0, 0, 1);
+     cursor: pointer;
+     transition: transfrom 0.5s;
+ }
+
+ .Testimonial .col-3 img {
+     width: 50px;
+     margin-top: 20px;
+     border-radius: 50%;
+ }
+
+ .Testimonial .col-3:hover {
+     transform: translateY(-10px);
+ }
+
+ /* -------------  Brands--------------- */
+ /* .Brands{
+    margin: 100px   auto;
+}
+
+col-5{
+    width: 160px;
+}
+col-5{
+    width: 100px;
+    cursor: pointer;
+} */
+
+ /* ----------footer --------- */
+ .footer {
+     background: #000;
+     color: #8a8a8a;
+     font-size: 14px;
+     padding: 60px 0 20px;
+ }
+
+ .footer p {
+     color: #8a8a8a;
+ }
+
+ .footer h3 {
+     color: #fff;
+     margin-bottom: 20px;
+ }
+
+ .footer-col-1,
+ .footer-col-2,
+ .footer-col-3,
+ .footer-col-4 {
+     min-width: 250px;
+     margin-bottom: 20px;
+ }
+
+ .footer-col-1 {
+     flex-basis: 30%;
+ }
+
+ .footer-col-2 {
+     flex: 1;
+     text-align: center;
+ }
+
+ .footer-col-2 img {
+     width: 180px;
+     margin-bottom: 20px;
+ }
+
+ .footer-col-3,
+ .footer-col-4 {
+     flex-basis: 12%;
+     text-align: center;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ /* .app-logo{
+    margin-top: 20px;
+}
+.app-logo    img{
+width: 140px;
+} */
+ .menu-icon {
+     width: 28px;
+     margin-left: 20px;
+     /* background: #000; */
+     display: none;
+ }
+
+ /* ---------------   media query for menu  -------------- */
+
+ @media only screen and (max-width: 800px) {
+
+    nav ul  {
+         position: absolute;
+         top: 70px;
+         left: 0;
+         background: #333;
+         width: 100%;
+         overflow: hidden;
+         transition: max-height 0.5s;
+
+     }
+     nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+
+     }
+     nav ul li a{
+        color: #fff;
+     }
+     .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+ }
+
+ /* -------------  All products Page -----------  */
+
+ .row2{
+    justify-content: space-between;
+    margin: 100px auto  50px;
+ }
+ select{
+    border: 1px solid  #ff523b;
+     padding: 5px;
+ }
+ select:focus{
+    outline: none;
+    
+ }
+.pag-btn{
+    margin: 0 auto 80px;
+}
+.pag-btn span{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 30px; 
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.pag-btn span:hover{
+    background: black;
+    color: white;
+}
+
+
+
+
+ /* media query for Less than 600 screen size */
+
+ @media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2,  .col-3, .col-4{
+        flex-basis: 100;
+        
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    *{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* background-image:url( "./images/pexels-pixabay-414630.jpg") ; */
+    /* display: flex; */
+    background-size: 100%  740px;
+    font-family: 'Mulish' , sans-serif;
+}
+.contain h1{
+    font-size: 36px;
+    color: aqua;
+}
+.contain{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    margin-left: 40%;
+    margin-top: 8%;
+    text-align: center;
+    color: white;
+ 
+}
+.contain .text{
+    position: relative;
+    top: 7%;
+}
+
+.inp1{
+    border: none;
+    background-color: black;
+    border-bottom: 2px  solid white;
+    width: 250px;
+    font-size: 15px;
+margin-top: 40px;
+outline: none;
+color: #fff;
+
+}
+.inp2{
+    border: none;
+    background-color: black;
+    border-bottom: 2px  solid white;
+    width: 250px;
+    font-size: 15px;
+margin-top: 40px;
+outline: none;
+color: #fff;
+
+}
+.text button{
+width: 250px;
+height:44px ;
+background-color: aqua;
+color: black;
+border: none;
+font-size: 24px;
+border-radius: 25px;
+margin-top: 20px;
+ cursor: pointer;
+
+}
+button:hover{
+    border: 3px solid aqua;
+    color: white;
+font-size: 20px;
+background-color: black;
+
+}
+
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+p span{
+    color: aqua;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+    <div  class="contain">
+        <div class="text" >
+        <h1>Login</h1>
+        <input  class="inp1" type="text"  placeholder="Enter UserName"  >
+        <input class="inp2" type="password"    placeholder="Enter password"  >
+        <p>Forget password ?</p>
+        <button>Login</button>
+        <p>Not a member?  <span>Sign Up </span></p>
+        
+        </div>
+            
+        </div>
+        
+
+
+
+
+
+
+
+    
+
+
+    <!----------featured  categories---------->
+    <div class="categories ">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <!-- <img src="./images/5df68ac1bbad132b6591debb9e3b5b02.webp"> -->
+                </div>
+                <div class="col-3">
+                    <!-- <img src="./images/images (2).jpeg  "> -->
+                </div>
+                <div class="col-3">
+                    <!-- <img src="./images/images (3).jpeg"> -->
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+
+        <!-- ---------- footer   ---------- -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download app For Android and ios Mobile phones </p>
+
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png">
+                        <p>Download app For Android and ios Mobile phones </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3> useful links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li> Blog Post </li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3> Follow Us</h3>
+                        <ul>
+                            <li>Fasebook</li>
+                            <li> Twitter </li>
+                            <li>instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- ----------   js for toggle menu  ---------- -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+
+
+            }
+        </script>
+
+
+
+</body>
+
+</html>
